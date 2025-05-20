@@ -1,44 +1,155 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-
-    <div>   
-        <div class="logo">
-            <img src="assets/images/logo.png" width="200"/>
-        </div>
-    </div>
-
-    <div class="bar"></div>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cubo de Rubik – Wikipédia Moderna</title>
+    <meta
+      name="description"
+      content="Página moderna e acessível sobre o Cubo de Rubik, com informações históricas, estrutura, curiosidades e referências."
+    />
+    <meta name="author" content="Desafio DIO" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="bar" role="banner">
+      <div class="logo">
+        <img
+          src="assets/images/rubik-icon.png"
+          width="60"
+          height="60"
+          alt="Ícone do Cubo de Rubik"
+        />
+        <h1 tabindex="0">Cubo de Rubik</h1>
+      </div>
+    </header>
     <div class="content">
-        <div class="sidebar">
-            <h2>Título</h2>
+      <nav class="sidebar" aria-label="Navegação principal">
+        <h2 class="visually-hidden">Navegação</h2>
+        <ul>
+          <li><a href="#introducao">Introdução</a></li>
+          <li><a href="#historia">História</a></li>
+          <li><a href="#estrutura">Estrutura</a></li>
+          <li><a href="#curiosidades">Curiosidades</a></li>
+          <li><a href="#referencias">Referências</a></li>
+        </ul>
+      </nav>
+      <main class="main" id="main-content" tabindex="-1">
+        <article itemscope itemtype="https://schema.org/Article">
+          <header>
+            <section id="introducao">
+              <h2 itemprop="headline">Introdução</h2>
+              <figure>
+                <img
+                  src="assets/images/colorful-rubik-s-cube.png"
+                  alt="Cubo de Rubik colorido, renderização digital"
+                  width="300"
+                  height="auto"
+                  itemprop="image"
+                />
+                <figcaption>Cubo de Rubik tradicional 3x3x3</figcaption>
+              </figure>
+              <p itemprop="description">
+                O <strong>Cubo de Rubik</strong> é um quebra-cabeça
+                tridimensional inventado em 1974 pelo húngaro Ernő Rubik. O
+                objetivo é alinhar as faces do cubo para que cada uma tenha
+                apenas uma cor.
+              </p>
+            </section>
+          </header>
+          <section id="historia">
+            <h2>História</h2>
+            <p>
+              O cubo foi criado inicialmente como uma ferramenta didática para
+              explicar conceitos de geometria espacial. Em 1980, foi lançado
+              mundialmente e rapidamente se tornou um fenômeno cultural.
+            </p>
+          </section>
+          <section id="estrutura">
+            <h2>Estrutura</h2>
+            <p>
+              O cubo tradicional possui 6 faces, cada uma com 9 quadrados (3x3).
+              Existem também versões 2x2, 4x4, 5x5 e até maiores. O mecanismo
+              interno permite que as camadas girem independentemente.
+            </p>
+          </section>
+          <section id="curiosidades">
+            <h2>Curiosidades</h2>
+            <figure>
+              <img
+                src="assets/images/rubiks animé.gif"
+                alt="Animação de um Cubo de Rubik girando"
+                width="220"
+                height="220"
+              />
+              <figcaption>Animação do Cubo de Rubik em movimento</figcaption>
+            </figure>
             <ul>
-                <li><a href="#">Links</a></li>
+              <li>
+                O número de combinações possíveis no cubo 3x3x3 é de 43
+                quintilhões.
+              </li>
+              <li>O recorde mundial de solução é inferior a 4 segundos.</li>
+              <li>
+                Existem competições oficiais de speedcubing ao redor do mundo.
+              </li>
             </ul>
-        </div>
-
-        <div class="main">
-            
-        </div>
-
-        <div class="anchors">
-            <h2>Neste Artigo</h2>
+          </section>
+          <section id="referencias">
+            <h2>Referências</h2>
             <ul>
-                <li><a href="#">Âncoras</a></li>
+              <li>
+                <a
+                  href="https://pt.wikipedia.org/wiki/Cubo_de_Rubik"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  itemprop="sameAs"
+                  >Wikipedia: Cubo de Rubik</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.worldcubeassociation.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  itemprop="sameAs"
+                  >World Cube Association</a
+                >
+              </li>
             </ul>
-        </div>
+          </section>
+        </article>
+      </main>
+      <aside class="anchors" aria-label="Neste Artigo">
+        <h2 class="visually-hidden">Navegação do artigo</h2>
+        <nav aria-label="Seções deste artigo">
+          <ul>
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#historia">História</a></li>
+            <li><a href="#estrutura">Estrutura</a></li>
+            <li><a href="#curiosidades">Curiosidades</a></li>
+            <li><a href="#referencias">Referências</a></li>
+          </ul>
+        </nav>
+      </aside>
     </div>
-
-    <div class="footer">
-
-    </div>
-</body>
+    <footer class="footer" role="contentinfo">
+      <p>Desenvolvido como desafio DIO | Inspirado na Wikipedia</p>
+    </footer>
+    <a href="#main-content" class="visually-hidden focusable skip-link"
+      >Pular para o conteúdo principal</a
+    >
+  </body>
 </html>
+<!--
+Acessibilidade e SEO:
+- Uso de landmarks (header, main, nav, aside, footer)
+- Uso de alt descritivo e atributos de tamanho em imagens
+- Uso de heading tags corretas
+- Uso de aria-labels e skip-link
+- Uso de schema.org/Article
+- Metadados SEO
+- Links externos com rel="noopener noreferrer"
+- Classes visually-hidden para títulos de navegação e skip-link
+-->
